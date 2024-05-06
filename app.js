@@ -12,8 +12,8 @@ function init() {
     scene = new THREE.Scene();
     clock = new THREE.Clock();
 
-    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
-    camera.position.set(100, 50, 200);
+    camera = new THREE.PerspectiveCamera(450, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera.position.set(1000, 500, 2000);
 
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -42,7 +42,7 @@ function setupLighting() {
     scene.add(ambientLight);
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1.2);
-    directionalLight.position.set(-300, 150, 300);
+    directionalLight.position.set(-3000, 1500, 3000);
     scene.add(directionalLight);
 }
 
